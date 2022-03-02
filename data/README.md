@@ -1,6 +1,6 @@
 # Data Information
 
-* `counties` - county shapefiles for various spatial extents
+* `geodata/counties` - county shapefiles for various spatial extents
 * `hospitals` - Hospital data comes from the Homeland Infrastructure Foundation-Level Data (HIFLD). Download here: https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::hospitals-1/about
 * `memory_df` - CSV files giving estimated memory usage for each county's road network, calculated using scripts in `scripts`
 * `pop` - Population data comes from the Centers for Disease Control (CDC)/Agency for Toxic Substances and Disease Registry (ATSDR) Social Vulnerability Index (SVI). Download here: https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html
@@ -9,29 +9,29 @@
 A full breakdown of the data directory:
 
 ```
-> tree .
 .
-├── counties
-│   ├── ContinentalCounties
-│   │   ├── ContinentalUS.cpg
-│   │   ├── ContinentalUS.csv
-│   │   ├── ContinentalUS.dbf
-│   │   ├── ContinentalUS.prj
-│   │   ├── ContinentalUS.shp
-│   │   └── ContinentalUS.shx
-│   ├── ILCounties
-│   │   ├── ILCountyShapefile.cpg
-│   │   ├── ILCountyShapefile.dbf
-│   │   ├── ILCountyShapefile.prj
-│   │   ├── ILCountyShapefile.shp
-│   │   └── ILCountyShapefile.shx
-│   └── MidwestCounties
-│       ├── MidwestCounties.cpg
-│       ├── MidwestCounties.dbf
-│       ├── MidwestCounties.geojson
-│       ├── MidwestCounties.prj
-│       ├── MidwestCounties.shp
-│       └── MidwestCounties.shx
+├── geodata
+│   └── counties
+│       ├── ContinentalCounties
+│       │   ├── ContinentalUS.cpg
+│       │   ├── ContinentalUS.csv
+│       │   ├── ContinentalUS.dbf
+│       │   ├── ContinentalUS.prj
+│       │   ├── ContinentalUS.shp
+│       │   └── ContinentalUS.shx
+│       ├── ILCounties
+│       │   ├── ILCountyShapefile.cpg
+│       │   ├── ILCountyShapefile.dbf
+│       │   ├── ILCountyShapefile.prj
+│       │   ├── ILCountyShapefile.shp
+│       │   └── ILCountyShapefile.shx
+│       └── MidwestCounties
+│           ├── MidwestCounties.cpg
+│           ├── MidwestCounties.dbf
+│           ├── MidwestCounties.geojson
+│           ├── MidwestCounties.prj
+│           ├── MidwestCounties.shp
+│           └── MidwestCounties.shx
 ├── hospitals
 │   ├── continental
 │   │   ├── ContinentalHospitals.cpg
@@ -76,11 +76,11 @@ A full breakdown of the data directory:
 │   │   ├── SVI2018_IL_tract.shp
 │   │   └── SVI2018_IL_tract.shx
 │   └── midwest
-│       ├── Midwest_SVI_CT.cpg
-│       ├── Midwest_SVI_CT.dbf
-│       ├── Midwest_SVI_CT.prj
-│       ├── Midwest_SVI_CT.shp
-│       └── Midwest_SVI_CT.shx
+│       ├── Midwest_SVI_CT.cpg
+│       ├── Midwest_SVI_CT.dbf
+│       ├── Midwest_SVI_CT.prj
+│       ├── Midwest_SVI_CT.shp
+│       └── Midwest_SVI_CT.shx
 ├── README.md
 └── regions
     ├── Continental
@@ -96,5 +96,5 @@ A full breakdown of the data directory:
         ├── resource_catchments_1800distance.geojson
         └── resource_catchments_600distance.geojson
 
-17 directories, 75 files
+18 directories, 67 files
 ```
