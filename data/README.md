@@ -2,7 +2,7 @@
 
 * `geodata/counties` - county shapefiles for various spatial extents
 * `hospitals` - Hospital data comes from the Homeland Infrastructure Foundation-Level Data (HIFLD). Download here: https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::hospitals-1/about
-* `memory_df` - CSV files giving estimated memory usage for each county's road network, calculated using scripts in `scripts`
+* `memory_df` - CSV file giving estimated memory usage for each county's road network, calculated using scripts in `scripts`
 * `pop` - Population data comes from the Centers for Disease Control (CDC)/Agency for Toxic Substances and Disease Registry (ATSDR) Social Vulnerability Index (SVI). Download here: https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html
 * `regions` - holds pre-computed travel-time catchments for our hospital dataset using the SCAMEL method
 
@@ -59,9 +59,7 @@ A full breakdown of the data directory:
 │       ├── MidwestHospitals.shp
 │       └── MidwestHospitals.shx
 ├── memory_df
-│   ├── Continental-MemoryUsage.csv
-│   ├── ILCounty-MemoryUsage.csv
-│   └── MidwestCounty-MemoryUsage.csv
+│   └── USCounty-MemoryUsage.csv
 ├── pop
 │   ├── continental
 │   │   ├── Continental_SVI_CT.cpg
@@ -84,17 +82,20 @@ A full breakdown of the data directory:
 ├── README.md
 └── regions
     ├── Continental
+    │   ├── ContClustering.png
     │   ├── resource_catchments_1200distance.shp
     │   ├── resource_catchments_1800distance.shp
     │   └── resource_catchments_600distance.shp
     ├── Illinois
+    │   ├── ILClustering.png
     │   ├── resource_catchments_1200distance.geojson
     │   ├── resource_catchments_1800distance.geojson
     │   └── resource_catchments_600distance.geojson
     └── Midwest
+        ├── MidwestClustering.png
         ├── resource_catchments_1200distance.geojson
         ├── resource_catchments_1800distance.geojson
         └── resource_catchments_600distance.geojson
 
-18 directories, 67 files
+18 directories, 68 files
 ```

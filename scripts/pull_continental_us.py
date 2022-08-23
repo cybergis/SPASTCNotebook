@@ -28,7 +28,11 @@ def pull_place(polygon, geoid, GRAPHML_FOLDER, PNG_FOLDER):
         print("{} already exists, skipping".format(geoid))
     else:
         try:
-            G = ox.graph_from_polygon(polygon, network_type="drive")
+            G = ox.graph_from_polygon(polygon,
+                                      network_type="drive",
+                                      retain_all=True,
+                                      truncate_by_edge=True,
+                                      clean_periphery=False)
             ox.save_graphml(G, "./{}/{}.graphml".format(GRAPHML_FOLDER, geoid))
             G_projected = ox.project_graph(G)
             del G
