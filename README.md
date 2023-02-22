@@ -1,10 +1,30 @@
-# SPACTS: A Novel Spatial Clustering Algorithm for Scalable SpatialAccessibility Analysis Under Memory Limits
+# SPACTS: a Spatial Partitioning Algorithm for Computing Travel-time at Scale
 
-![Accessibility for the Continental US](img/E2SFCA-OrRd.jpg)
+![Overview of the SPACTS algorithm](img/SPACTS.png)
+
+
+*Image: Overiew of the SPACTS algorithm*
 
 **Repo Author:** Alexander Michels  
-**Paper Authors:** Alexander Michels, Jeon-Young Kang, Jinwoo Park, and Shaowen Wang  
+**Paper Authors:** Alexander Michels, Jinwoo Park, Jeon-Young Kang, and Shaowen Wang  
 **Paper:** In preparation
+
+**Paper Abstract:**
+
+> We present a Spatial Partitioning Algorithm for Computing Travel-time at Scale
+(SPACTS). Calculating travel-time catchments over large spatial extents is com-
+putationally intensive, with previous work limiting their spatial extent to mini-
+mize computational burden or overcoming the computational burden with advanced
+cyberinfrastructure. SPACTS is designed for domain decomposition of travel-time
+catchment calculations with a user-provided memory limit on computation. SPACTS
+realizes this through spatial partitioning that preserves spatial relationships required
+to compute travel-time zones and respects a user-provided memory limit. This al-
+lows users to efficiently calculate travel-time catchments within a given memory limit
+and represents a significant speed-up over computing each catchment separately. We
+demonstrate SPACTS by computing spatial accessibility to hospital beds across the
+conterminous United States. Our case study shows that SPACTS achieves signifi-
+cant efficiency and scalability making the computation of travel-time catchment up
+to 51 times faster.
 
 SPACTS is designed as a novel algorithm for paritioning points in space *together* with the spatial context of the points. It was specifically designed for enabling scalable and memory constrained travel-time catchment calculations for spatial accessibility analysis. This repository contains:
 
@@ -30,3 +50,7 @@ For more information about the data and scripts, see the READMEs in the respecti
 
 
 *Image: Travel-time catchments for our hospital dataset*
+
+![Accessibility for the Continental US](img/E2SFCA-OrRd.jpg)
+
+*Image: Accessibility to hospital beds using E2SFCA for the conterminous U.S.*
