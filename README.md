@@ -7,7 +7,7 @@
 
 **Repo Author:** Alexander Michels  
 **Paper Authors:** Alexander Michels, Jinwoo Park, Jeon-Young Kang, and Shaowen Wang  
-**Paper:** In preparation
+**Paper:** [Published in IJGIS (doi: 10.1080/13658816.2024.2326445)](https://doi.org/10.1080/13658816.2024.2326445)
 
 **Paper Abstract:**
 
